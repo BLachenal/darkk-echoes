@@ -18,9 +18,9 @@ export default function App() {
 
     return (
       <section className="details">
-        <h2>{selectedEpisode.title}</h2>
+        <h2>Episode #{selectedEpisode.id} {selectedEpisode.title}</h2>
         <p>{selectedEpisode.description}</p>
-        <button>Watch Now</button>
+        <button onClick={() => window.open("https://youtu.be/dQw4w9WgXcQ?si=1deqwQXLe8xdRlqI", "_blank")}>Watch Now</button>
       </section>
     );
   }
